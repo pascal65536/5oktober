@@ -10,7 +10,6 @@ import datetime
 import binascii
 from collections import defaultdict
 
-
 vowel = "aeiouy"  # гласные
 consonant = "bcdfghjklmnpqrstvwxz"  # согласные
 rus_alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
@@ -465,28 +464,6 @@ def logging_to_csv(name, msg1, msg2, folder_name="log") -> None:
         f.write(";".join([f'"{x}"' for x in x_lst]) + "\n")
 
 
-def log_action(func):
-    """Декоратор для логирования"""
-
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        try:
-            # Логируем входные параметры
-            logging.info(
-                f"Calling function: {func.__name__} with args: {args[0].json} and kwargs: {kwargs}"
-            )
-            result = func(*args, **kwargs)
-            # Логируем выходное значение
-            logging.info(f"Function {func.__name__} returned: {result}")
-            return result
-        except Exception as e:
-            # Логируем исключения
-            logging.error(f"Exception in function {func.__name__}: {e}", exc_info=True)
-            raise
-
-    return wrapper
-
-
 def collect_files_lst(start_path: str) -> list:
     """
     Collects a list of full paths to all files in the given directory and its subdirectories.
@@ -563,7 +540,6 @@ def delete_files(filelist: list) -> None:
 
     :param filelist: a list of file paths to delete
     """
-    ld = len(filelist)
     for filename in filelist:
         os.remove(filename)
 
