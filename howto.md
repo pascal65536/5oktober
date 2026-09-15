@@ -72,6 +72,7 @@ chmod 600 ~/.pypirc
 - Проверьте пакет командой:
 
 ```bash
+sudo apt install twine
 twine check dist/*
 ```
 
