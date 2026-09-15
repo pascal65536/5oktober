@@ -44,7 +44,7 @@ This Python project to be a versatile utility library offering a wide range of f
 
    - collect_files_lst, moves_file, generate_random_code_string - Functions for collecting files, moving files, and generating random code strings.
 
-   - calculate_md5, find_duplicate_files, delete_files, remove_empty_directories, move_file_to_folder_with_limit - Functions specifically focused on duplicate file management, including MD5 hashing, duplicate file detection, deletion, and organization into folders with limited file counts.
+   - calculate_md5, str_to_md5, calculate_sha256, str_to_sha256, find_duplicate_files, delete_files, remove_empty_directories, move_file_to_folder_with_limit - Functions specifically focused on duplicate file management, including MD5 (SHA256) hashing, duplicate file detection, deletion, and organization into folders with limited file counts.
 
 6. Working with matrices. Matrix transformation of 2D space.
  
