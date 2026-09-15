@@ -1,5 +1,5 @@
 DESCRIPTION = """
-Copyright (C) 2020-2025 Sergey V. Pakhtusov aka pascal65536
+Copyright (C) 2020-2026 Sergey V. Pakhtusov aka pascal65536
 
 This Python project to be a versatile utility library offering a wide range of functionalities, including.
 
@@ -12,7 +12,7 @@ from setuptools import find_namespace_packages, setup, find_packages
 
 setup(
     name="behoof",
-    version="1.2.1",
+    version="1.2.2",
     packages=find_packages(),
     install_requires=[],
     author="Sergey V. Pakhtusov",

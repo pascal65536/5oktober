@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "behoof"
+version = "1.2.2"
+description = "A general-purpose utility library offering a wide range of functions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Sergey V. Pakhtusov", email = "pascal65536@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/pascal65536/behoof"
+Repository = "https://github.com/pascal65536/behoof"
+
+[tool.setuptools.package-dir]
+behoof = "behoof"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["behoof*"]
